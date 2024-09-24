@@ -67,7 +67,7 @@ exports.courseEnrollmentEmail = (courseName, name) => {
   
   <body>
       <div class="container">
-          <a href="/"><img class="logo" src="https://i.ibb.co/9NYFNJr/Screenshot-2024-09-23-133210.png"
+          <a href="${process.env.Frontend_URL}/"><img class="logo" src="https://i.ibb.co/9NYFNJr/Screenshot-2024-09-23-133210.png"
                   alt="CodeWay Logo"></a>
           <div class="message">Course Registration Confirmation</div>
           <div class="body">
@@ -76,7 +76,7 @@ exports.courseEnrollmentEmail = (courseName, name) => {
                   are excited to have you as a participant!</p>
               <p>Please log in to your learning dashboard to access the course materials and start your learning journey.
               </p>
-              <a class="cta" href="/dashboard">Go to Dashboard</a>
+              <a class="cta" href="${process.env.Frontend_URL}/dashboard">Go to Dashboard</a>
           </div>
           <div class="support">If you have any questions or need assistance, please feel free to reach out to us at <a
                   href="mailto:codeway43@gmail.com">info@CodeWay.com</a>. We are here to help!</div>

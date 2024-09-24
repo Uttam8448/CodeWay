@@ -67,7 +67,7 @@ exports.paymentSuccessEmail = (name, amount, orderId, paymentId) => {
     
     <body>
         <div class="container">
-            <a href="/"><img class="logo" src="https://i.ibb.co/9NYFNJr/Screenshot-2024-09-23-133210.png"
+            <a href="${process.env.Frontend_URL}/"><img class="logo" src="https://i.ibb.co/9NYFNJr/Screenshot-2024-09-23-133210.png"
                     alt="CodeWay Logo"></a>
             <div class="message">Course Payment Confirmation</div>
             <div class="body">

@@ -40,7 +40,6 @@ function SignupForm() {
   // Handle Form Submission
   const handleOnSubmit = (e) => {
     e.preventDefault()
-
     if (password !== confirmPassword) {
       toast.error("Passwords Do Not Match")
       return

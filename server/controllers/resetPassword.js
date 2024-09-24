@@ -25,8 +25,7 @@ exports.resetPasswordToken = async (req, res) => {
     console.log("DETAILS", updatedDetails)
 
     // const url = `http://localhost:3000/update-password/${token}`
-    const BASE_URL=process.env.REACT_APP_BASE_URL;
-    const url = `${BASE_URL}/update-password/${token}`
+    const url = `https://codeway-frontend-kohl.vercel.app/update-password/${token}`
 
     await mailSender(
       email,
